@@ -1,0 +1,56 @@
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# --- Python environments and caches ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.egg-info/
+build/
+dist/
+
+# --- Local databases (the app re-creates and seeds data/ on first run) ---
+data/
+data_backup_pre_upgrade/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# --- Demo video / presentation workspace and rendered media ---
+video_submission/
+*.mp4
+*.mov
+*.wav
+*.pptx
+*.pdf
+
+# --- Temporary build, render and log files ---
+tmp/
+temp/
+*.tmp
+*.log
+
+# --- Editor / OS / tooling ---
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+Desktop.ini
+.DS_Store
